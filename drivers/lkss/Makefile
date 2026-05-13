@@ -1,0 +1,1 @@
+obj-$(CONFIG_LKSS_DRIVERS_LAB2)	+= lab2/

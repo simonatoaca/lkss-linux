@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+if LKSS_DRIVERS_LAB2
+
+config LKSS_DRIVERS_LAB2_EX3
+	tristate "Lab2 Ex3 - Character device LED driver using gpiod"
+	default n
+	help
+	  Compile Lab2 Ex3: Character device LED driver using gpiod
+
+config LKSS_DRIVERS_LAB2_EX3_IOCTL
+        bool "Enable ioctl call for ex3 driver"
+        default n
+        depends on LKSS_DRIVERS_LAB2_EX3
+        help
+          Compile with support for ioctl() call
+
+config LKSS_DRIVERS_LAB2_EX4
+	tristate "Lab2 Ex4 - Using buttons with irqs for LED ctrl"
+	default n
+	help
+	  Compile Lab2 Ex4: Using buttons with irqs for LED ctrl
+
+endif # LKSS_DRIVERS_LAB2
